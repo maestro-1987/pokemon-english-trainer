@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-11T08:18:18.884Z",
+  "generatedAt": "2026-10-11T14:07:29.562Z",
   "source": "game/dist",
   "destination": "github-repository/dist",
   "counts": {
-    "files": 429,
+    "files": 437,
     "words": 307,
     "aliases": 67,
-    "partners": 17,
+    "partners": 25,
     "wordImages": 92,
     "icons": 3,
     "wav": 307
   },
   "bytes": {
-    "package": 16049046,
+    "package": 17081145,
     "originalWordsJson": 665295,
     "publicWordsJson": 358751
   },
@@ -2357,9 +2357,49 @@
       "sha256": "33ea993d3478ee920062b0bf27792a045b3a2f75d941bdb8cb3912ef50b1fb44"
     },
     {
+      "file": "assets/pokemon-134.png",
+      "bytes": 157955,
+      "sha256": "3f4a86ef2ec064c98dd8fb207046c7202c1669e5fb7fac05fc1acea364d2770f"
+    },
+    {
+      "file": "assets/pokemon-135.png",
+      "bytes": 141908,
+      "sha256": "bf525c20b899e08398d93d0436d2e592463068d85da8760424ac340c7f8f8ed8"
+    },
+    {
+      "file": "assets/pokemon-136.png",
+      "bytes": 149971,
+      "sha256": "a11d3f021baf917f9106266d5fec5b6326a2850b130e4560e333fa9f481c41ec"
+    },
+    {
       "file": "assets/pokemon-143.png",
       "bytes": 139225,
       "sha256": "1afd32e5f6053a50860d67c5d7cc3bc6ca9a174634097fe65880523a0a13a55a"
+    },
+    {
+      "file": "assets/pokemon-196.png",
+      "bytes": 104026,
+      "sha256": "d0e74b02adc3df07f9bf026303b1068c58183f8703ae2ca42b8d7b58e9a0696f"
+    },
+    {
+      "file": "assets/pokemon-197.png",
+      "bytes": 99819,
+      "sha256": "8d7f18f7b323269dff84480f1ee8873a5d47a3eb3fd4b2ac1d2bbf0cf45a6ddd"
+    },
+    {
+      "file": "assets/pokemon-470.png",
+      "bytes": 141615,
+      "sha256": "3cb145cfafe87da63f75d80d2540e2f7f61c3c97275ff4231a462d949f4bd339"
+    },
+    {
+      "file": "assets/pokemon-471.png",
+      "bytes": 93967,
+      "sha256": "bc7c93a32e133f9e560b38722d0bc4992b7bb8d1cd902de984ccbd872a19f71b"
+    },
+    {
+      "file": "assets/pokemon-700.png",
+      "bytes": 136613,
+      "sha256": "193777db6d89cdace234fe3198dca4e955a7a5a18011cd0105178b436f6199a7"
     },
     {
       "file": "assets/read.jpg",
@@ -2504,12 +2544,12 @@
     {
       "file": "index.html",
       "bytes": 1353,
-      "sha256": "0b300fd1eb2696ee7165f83ebbdfae2548c4f0c7ff48edfcbc708950a0a1ed16"
+      "sha256": "aa8e933b8806a32d9764141f9048432638c5b8cd748db037774b5a72db1240e3"
     },
     {
       "file": "progress-file.mjs",
-      "bytes": 2042,
-      "sha256": "ab056a5d838e867d8389ee533eabc0a0eb2c2462a29a088555e5e14b84d23dac"
+      "bytes": 2142,
+      "sha256": "dcae17018fe06c04f9843cda8a9a2a0815d997bdeca232e1e4e60dee6280ea9f"
     },
     {
       "file": "sound.mjs",
@@ -2518,18 +2558,18 @@
     },
     {
       "file": "trainer-engine.mjs",
-      "bytes": 9774,
-      "sha256": "79ac11cd3e2d0583d02ad1c8da15c950b0610d937ce5de2fab349132bc5476ff"
+      "bytes": 10825,
+      "sha256": "4078b748b8726d1be0fa56e92a61db7d49f5219d530fbf946da4472a4577dc2a"
     },
     {
       "file": "trainer.css",
-      "bytes": 43999,
-      "sha256": "21e83ff86f68d884da9478b74b9effa8acdc06fa63358b23315efa80123c2ada"
+      "bytes": 48201,
+      "sha256": "4744036898fe6cd036f1f14c3cba72071010754d9e36731c06a6b8becff1ea5b"
     },
     {
       "file": "trainer.mjs",
-      "bytes": 31716,
-      "sha256": "23b305be4da36755687a72ae8f0328660853fde1c94aac6fc60eb01a060fe60c"
+      "bytes": 32588,
+      "sha256": "a450d028b734b10544e17761a793a318cdbb195946b1bb970db0845d14bb6086"
     },
     {
       "file": "voice.mjs",

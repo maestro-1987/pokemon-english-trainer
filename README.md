@@ -25,7 +25,7 @@
 ## 素材与来源
 
 - 英语词条根据用户提供的教材和 Word List 整理，单词的文件名、页码、单元等出处保存在 `dist/data/words.json` 的 `source` / `sources` 中。仓库不包含原始 PDF、整页扫描、课程全文、OCR 草稿或旧词库历史基线。词义图片为教材中的局部裁图；部分颜色、数量和物品图为项目制作的 SVG。
-- 17 张伙伴及进化形态图片来自 [Pokémon 官方图鉴](https://www.pokemon.com/us/pokedex)。角色及相关标识 © Pokémon / Nintendo / Creatures / GAME FREAK。
+- 25 张伙伴及进化形态图片来自 [Pokémon 官方图鉴](https://www.pokemon.com/us/pokedex)，包括伊布的八种进化形态。伊布达到 24 点成长时随机进化一次，揭晓结果保存在各自训练家的进度中；此前进化图鉴显示「❓」。角色及相关标识 © Pokémon / Nintendo / Creatures / GAME FREAK。
 - 307 段英语 WAV 是在本地使用 [Piper](https://github.com/OHF-Voice/piper1-gpl) 与 [en_GB-alba-medium 模型](https://huggingface.co/rhasspy/piper-voices/tree/main/en/en_GB/alba/medium) 生成的合成读音，非教材原声。模型来源为爱丁堡大学 [Alba speech corpus](https://datashare.ed.ac.uk/handle/10283/3270)，模型卡标注 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。Piper、语音模型和生成程序不随网站分发。
 - 首页和游戏场景、音乐、招式效果由项目的 CSS / SVG / Web Audio 实现。
 

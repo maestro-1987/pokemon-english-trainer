@@ -19,9 +19,10 @@ export const PARTNERS=[
  {id:'052',name:'喵喵',move:'聚宝功',type:'star',chain:['052','053']},
  {id:'143',name:'卡比兽',move:'泰山压顶',type:'earth',chain:['143']}
 ];
-export const NAMES={'026':'雷丘','002':'妙蛙草','003':'妙蛙花','005':'火恐龙','006':'喷火龙','008':'卡咪龟','009':'水箭龟','040':'胖可丁','053':'猫老大',...Object.fromEntries(PARTNERS.map(p=>[p.id,p.name]))};
+export const EEVEE_FORMS=[{id:'134',name:'水伊布',type:'water',move:'水之波动'},{id:'135',name:'雷伊布',type:'electric',move:'电光闪耀'},{id:'136',name:'火伊布',type:'fire',move:'火焰旋风'},{id:'196',name:'太阳伊布',type:'star',move:'念力星光'},{id:'197',name:'月亮伊布',type:'star',move:'月光冲击'},{id:'470',name:'叶伊布',type:'grass',move:'叶片旋舞'},{id:'471',name:'冰伊布',type:'water',move:'冰晶波动'},{id:'700',name:'仙子伊布',type:'star',move:'缎带星光'}];
+export const NAMES={'026':'雷丘','002':'妙蛙草','003':'妙蛙花','005':'火恐龙','006':'喷火龙','008':'卡咪龟','009':'水箭龟','040':'胖可丁','053':'猫老大',...Object.fromEntries([...PARTNERS,...EEVEE_FORMS].map(p=>[p.id,p.name]))};
 export function createState(old={}){
- const players=(old.players||[{name:'小训练家',partner:'025'},{name:'大训练家',partner:'001'}]).map(p=>({...p,xp:p.xp||{},evolved:p.evolved||{},rewards:p.rewards||{}}));
+ const players=(old.players||[{name:'小训练家',partner:'025'},{name:'大训练家',partner:'001'}]).map(p=>({...p,xp:p.xp||{},evolved:p.evolved||{},rewards:p.rewards||{},eeveeEvolution:EEVEE_FORMS.some(f=>f.id===p.eeveeEvolution)?p.eeveeEvolution:null}));
  return {...old,version:3,book:old.book||'upper',players,records:old.records||[],rounds:old.rounds||{},badges:old.badges||{},partners:old.partners||{'025':1,'001':1},settings:{music:true,effects:true,reduced:false,...old.settings},sessions:old.version===3?(old.sessions||{}):{},wrong:old.wrong||{}};
 }
 export function progress(state,word,stage){return state.records.filter(r=>r.book===word.book&&r.item===word.id&&r.stage===stage&&r.scope==='solo'&&r.player===0&&r.type==='answer'&&r.correct&&!r.assisted).length>0}
@@ -48,9 +49,9 @@ export function migrate(old,data){
  for(const [b,s]of Object.entries(state.sessions))if(s.version!==3||s.tasks.some(t=>!byId.has(t.item)||byId.get(t.item).book!==b))delete state.sessions[b];
  return state;
 }
-export function evolutionFor(player,base){const p=PARTNERS.find(p=>p.id===base)||PARTNERS[0],xp=player.xp?.[p.id]||0;const stage=xp>=70?2:xp>=24?1:0;return {base:p.id,id:p.chain[Math.min(stage,p.chain.length-1)],stage:Math.min(stage,p.chain.length-1),xp,next:p.chain.length>stage+1?(stage===0?24:70):null,...{type:p.type,move:p.move}}}
-export function grantXp(state,player,session,task,assisted){
- session.awarded??=[];const id=`${player}:${task.id}`;if(session.awarded.includes(id))return null;session.awarded.push(id);const p=state.players[player],base=PARTNERS.find(x=>x.id===p.partner)?.id||'025',before=evolutionFor(p,base);p.xp[base]=(p.xp[base]||0)+(assisted?1:2);const after=evolutionFor(p,base);if(before.id!==after.id){p.evolved[after.id]=true;return {from:before.id,to:after.id}}return null;
+export function evolutionFor(player,base){const p=PARTNERS.find(p=>p.id===base)||PARTNERS[0],xp=player.xp?.[p.id]||0;if(p.id==='133'){const form=xp>=24?EEVEE_FORMS.find(f=>f.id===player.eeveeEvolution):null;return {base:p.id,id:form?.id||p.id,stage:form?1:0,xp,next:form?null:24,type:form?.type||p.type,move:form?.move||p.move}}const stage=xp>=70?2:xp>=24?1:0;return {base:p.id,id:p.chain[Math.min(stage,p.chain.length-1)],stage:Math.min(stage,p.chain.length-1),xp,next:p.chain.length>stage+1?(stage===0?24:70):null,...{type:p.type,move:p.move}}}
+export function grantXp(state,player,session,task,assisted,random=Math.random){
+ session.awarded??=[];const id=`${player}:${task.id}`;if(session.awarded.includes(id))return null;session.awarded.push(id);const p=state.players[player],base=PARTNERS.find(x=>x.id===p.partner)?.id||'025',before=evolutionFor(p,base);p.xp[base]=(p.xp[base]||0)+(assisted?1:2);if(base==='133'&&p.xp[base]>=24&&!EEVEE_FORMS.some(f=>f.id===p.eeveeEvolution))p.eeveeEvolution=EEVEE_FORMS[Math.min(EEVEE_FORMS.length-1,Math.max(0,Math.floor(random()*EEVEE_FORMS.length)))].id;const after=evolutionFor(p,base);if(before.id!==after.id){p.evolved[after.id]=true;return {from:before.id,to:after.id}}return null;
 }
 export function buildRound(data,state,book,{mode='energy',random=Math.random,player=null}={}){
  const scope=['gym','coop','relay'].includes(mode)?mode:'solo',round=(state.rounds[book]||0)+1,words=data.words.filter(w=>w.book===book),count=i=>state.records.filter(r=>r.book===book&&r.item===i.id&&r.scope===scope&&r.type==='answer').length;
