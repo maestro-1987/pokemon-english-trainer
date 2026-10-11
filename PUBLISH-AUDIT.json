@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T05:43:07.885Z",
+  "generatedAt": "2026-10-11T08:18:18.884Z",
   "source": "game/dist",
   "destination": "github-repository/dist",
   "counts": {
@@ -12,7 +12,7 @@
     "wav": 307
   },
   "bytes": {
-    "package": 16046431,
+    "package": 16049046,
     "originalWordsJson": 665295,
     "publicWordsJson": 358751
   },
@@ -2503,8 +2503,8 @@
     },
     {
       "file": "index.html",
-      "bytes": 1349,
-      "sha256": "ef2177f7a09aa1e64070dea12962381b38d770969b0c559d6e4ae48d39a756a5"
+      "bytes": 1353,
+      "sha256": "0b300fd1eb2696ee7165f83ebbdfae2548c4f0c7ff48edfcbc708950a0a1ed16"
     },
     {
       "file": "progress-file.mjs",
@@ -2523,13 +2523,13 @@
     },
     {
       "file": "trainer.css",
-      "bytes": 41940,
-      "sha256": "4d03aa3838d31330c2e524cf78e0b3e3dcc37defb3cc5d0697de3a8403d20f4d"
+      "bytes": 43999,
+      "sha256": "21e83ff86f68d884da9478b74b9effa8acdc06fa63358b23315efa80123c2ada"
     },
     {
       "file": "trainer.mjs",
-      "bytes": 31164,
-      "sha256": "f585e71a07f191de1cbf39002ebea0fef0d3bad7812dbdea71da42b548744329"
+      "bytes": 31716,
+      "sha256": "23b305be4da36755687a72ae8f0328660853fde1c94aac6fc60eb01a060fe60c"
     },
     {
       "file": "voice.mjs",

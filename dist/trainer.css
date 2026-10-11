@@ -27,3 +27,19 @@ html,body{min-height:100%;margin:0}body{overflow:hidden}button{font:inherit;font
 @media(max-width:850px) and (min-height:800px){.player-zone .long-word .letter-slot{min-width:14px;font-size:15px}.player-zone .long-word .word-part{gap:2px}.player-zone .long-word .word-gap{width:8px}}
 
 .attacker.incorrect>img{animation:answerWobble .4s ease-out}.attacker.incorrect>span{color:#996344;background:#fff0dd}
+
+/* Larger, alphabetic touch targets in each trainer's own screen region. */
+.station-link{display:inline-flex;align-items:center;justify-content:center;gap:7px;text-decoration:none;color:#245c4d;font-weight:750;touch-action:manipulation;white-space:nowrap}
+.station-link svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round;flex-shrink:0}
+.station-link:focus-visible{outline:4px solid #268fc3;outline-offset:3px}
+.duo-board .player-zone{gap:6px;overflow-y:auto;justify-content:safe center}
+.player-zone .duo-clue{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;flex-shrink:0}
+.duo-clue .spell-prompt{flex-shrink:0}.duo-clue .word-slots{flex:1;min-width:0;max-width:100%}
+.player-zone .touch-keyboard.duo-keyboard{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;width:100%;max-width:560px;flex-shrink:0}
+.player-zone .duo-keyboard .input-key{width:100%;min-height:52px;height:52px;font-size:30px;border-radius:11px;touch-action:manipulation}
+.player-zone .input-error:empty{display:none}
+.player-zone .spell-tools{width:100%;flex-shrink:0;gap:6px}
+.player-zone .spell-tools button{min-height:44px;padding:7px 11px}
+.player-zone .spell-tools .skip-btn{margin:0;font-size:12px;min-height:44px;padding:7px 8px}
+@media(max-width:850px){.player-zone .touch-keyboard.duo-keyboard{grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}.player-zone .duo-keyboard .input-key{height:58px;min-height:58px;font-size:30px}.player-zone .duo-clue{flex-direction:column;gap:6px}.player-zone .spell-tools button{padding:7px 9px}}
+@media(max-width:600px){.header-actions{gap:5px}.header-actions .small-btn{font-size:12px;padding:8px}.station-link{gap:4px}.station-link svg{width:20px;height:20px}header .brand{padding:0}header .brand span{display:none}.player-zone .touch-keyboard.duo-keyboard{grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}.player-zone .duo-keyboard .input-key{height:44px;min-height:44px;font-size:24px}.player-zone .spell-tools{flex-wrap:wrap}}
