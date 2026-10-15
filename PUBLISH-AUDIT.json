@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-11T14:07:29.562Z",
+  "generatedAt": "2026-10-15T16:30:53.394Z",
   "source": "game/dist",
   "destination": "github-repository/dist",
   "counts": {
-    "files": 437,
+    "files": 466,
     "words": 307,
     "aliases": 67,
-    "partners": 25,
+    "partners": 54,
     "wordImages": 92,
     "icons": 3,
     "wav": 307
   },
   "bytes": {
-    "package": 17081145,
+    "package": 21189594,
     "originalWordsJson": 665295,
     "publicWordsJson": 358751
   },
@@ -2322,6 +2322,36 @@
       "sha256": "ba0a6b633e7a5d5a8c52498b0556518005fd4c63ef4564a8b06b79a73905a635"
     },
     {
+      "file": "assets/pokemon-010.png",
+      "bytes": 174430,
+      "sha256": "49eb7f6c88d65d65e938d42df61d5cf47dd46f01c08603b6df620eb003a37457"
+    },
+    {
+      "file": "assets/pokemon-011.png",
+      "bytes": 118885,
+      "sha256": "945f2aca4d6ae55a77a93d132fee41f3f334cf2b91611d3da6e76715f27e778c"
+    },
+    {
+      "file": "assets/pokemon-012.png",
+      "bytes": 183600,
+      "sha256": "0d412d9b32b8064f19b414b5f919b2af1ff04f8e2d07bf88e091562ca3583db7"
+    },
+    {
+      "file": "assets/pokemon-016.png",
+      "bytes": 145917,
+      "sha256": "cabe3212d06ce9c59184b84cbf2bcb17396f441d7c857243253502247e637758"
+    },
+    {
+      "file": "assets/pokemon-017.png",
+      "bytes": 158875,
+      "sha256": "85d27fddfceb90c48d18f6b833a7769446bb369edeeab7fae2308247c3f9ed2a"
+    },
+    {
+      "file": "assets/pokemon-018.png",
+      "bytes": 147161,
+      "sha256": "0f2cf5f30ee821f867cdced8d64fa87a11ae01643bb48c10296ee1ffdc18ca14"
+    },
+    {
       "file": "assets/pokemon-025.png",
       "bytes": 118057,
       "sha256": "759ceafdb4b8d637dfcfe673cf672bc3c472354a3b2e7e0835d9cdcacd8d195d"
@@ -2330,6 +2360,16 @@
       "file": "assets/pokemon-026.png",
       "bytes": 94288,
       "sha256": "e5671c5f00695fa6f6a3fc08a70d0b53a34e14f5dafcccc66316bdee90d076ac"
+    },
+    {
+      "file": "assets/pokemon-037.png",
+      "bytes": 157357,
+      "sha256": "cded4e96e175c05c19380a1226e825f3fb2a0b889f3c011d74570e7503853555"
+    },
+    {
+      "file": "assets/pokemon-038.png",
+      "bytes": 184128,
+      "sha256": "e60b06bf0aa8b23a593958cc32806534a3553707797be10767550a6f4ddb9068"
     },
     {
       "file": "assets/pokemon-039.png",
@@ -2350,6 +2390,81 @@
       "file": "assets/pokemon-053.png",
       "bytes": 118816,
       "sha256": "b477fdc0d93c55455908cc1e430d0959203234f85362d60431a0843eaec332e7"
+    },
+    {
+      "file": "assets/pokemon-054.png",
+      "bytes": 117239,
+      "sha256": "87110a75d9d9c67e0d82b912abcea3c25a96bc394e366812c65639ea1bacdf40"
+    },
+    {
+      "file": "assets/pokemon-055.png",
+      "bytes": 128809,
+      "sha256": "343e4f5bca573e0fcaaaf32ae1cd4b7495c336fa6524c7da58e65167fb454609"
+    },
+    {
+      "file": "assets/pokemon-058.png",
+      "bytes": 151687,
+      "sha256": "05f90f8fec5729ef41ee205acf7d81a97e84cd6a82c5babf6e4eacf5662ee57a"
+    },
+    {
+      "file": "assets/pokemon-059.png",
+      "bytes": 197883,
+      "sha256": "4461b18982bbed0d9384ebcf99015347ff47a4e9dc926476d779c83ebd2d7093"
+    },
+    {
+      "file": "assets/pokemon-060.png",
+      "bytes": 133801,
+      "sha256": "cdec53c7b6558877cb600b4590206ed81c21dbbb8c7ded56791ff0bbc77d8d3a"
+    },
+    {
+      "file": "assets/pokemon-061.png",
+      "bytes": 150225,
+      "sha256": "06f1cf555b609f982d61f323323c71fa4e3c8f5de75460f167a63649446ad7b4"
+    },
+    {
+      "file": "assets/pokemon-062.png",
+      "bytes": 115518,
+      "sha256": "955dd03af636f66f7283eb914a3dec6b7c340e300b5f67771b5af811c946dc9d"
+    },
+    {
+      "file": "assets/pokemon-066.png",
+      "bytes": 132188,
+      "sha256": "699145a859f7aa9412662fb671b8e7ae52af27d4eaf9ab5b4bbf453dde7f41fb"
+    },
+    {
+      "file": "assets/pokemon-067.png",
+      "bytes": 169060,
+      "sha256": "6c8151497d31a5969ce5a28cb11a18779159cc720794e079cd9194963189d241"
+    },
+    {
+      "file": "assets/pokemon-068.png",
+      "bytes": 151393,
+      "sha256": "5d124f441d6690e19de8685e30b1e5d375f2fd6dd91be5cfd164dacf6853f7e6"
+    },
+    {
+      "file": "assets/pokemon-077.png",
+      "bytes": 125214,
+      "sha256": "a4e14c8e403f13cdc307d64918c090ecd112cd9e50fe44ac15fa6b10d342a523"
+    },
+    {
+      "file": "assets/pokemon-078.png",
+      "bytes": 172853,
+      "sha256": "62d6b8432e29da9f5e9b35aa1393dd9df40527cf454e10b300bb61461f630bc9"
+    },
+    {
+      "file": "assets/pokemon-092.png",
+      "bytes": 176993,
+      "sha256": "23c69f67ece1dd1724666a4bb94ebea14d53045c6f406faa2963db4f04bd5f4b"
+    },
+    {
+      "file": "assets/pokemon-093.png",
+      "bytes": 105214,
+      "sha256": "e21bab36fe663028b33f1f73d2dfd50f2f8aa4675fac327f24a0f2a9768ba74f"
+    },
+    {
+      "file": "assets/pokemon-094.png",
+      "bytes": 144713,
+      "sha256": "b6549b80537676fcf4a589c8853b38cce42f42b5f707bbe2e63797666175cf06"
     },
     {
       "file": "assets/pokemon-133.png",
@@ -2377,6 +2492,21 @@
       "sha256": "1afd32e5f6053a50860d67c5d7cc3bc6ca9a174634097fe65880523a0a13a55a"
     },
     {
+      "file": "assets/pokemon-147.png",
+      "bytes": 102258,
+      "sha256": "0172fb6a0c44d0e748e679dc39195d662027aa170fd65ca98bc405eea184cc2d"
+    },
+    {
+      "file": "assets/pokemon-148.png",
+      "bytes": 103226,
+      "sha256": "9a650c967983f07696a867116617606b05179518024c60fa744491992d160f68"
+    },
+    {
+      "file": "assets/pokemon-149.png",
+      "bytes": 132064,
+      "sha256": "4bd7549caa15eac43a8197ba53e843a95f2b56c71b1121829ea76764fbf26f9c"
+    },
+    {
       "file": "assets/pokemon-196.png",
       "bytes": 104026,
       "sha256": "d0e74b02adc3df07f9bf026303b1068c58183f8703ae2ca42b8d7b58e9a0696f"
@@ -2385,6 +2515,21 @@
       "file": "assets/pokemon-197.png",
       "bytes": 99819,
       "sha256": "8d7f18f7b323269dff84480f1ee8873a5d47a3eb3fd4b2ac1d2bbf0cf45a6ddd"
+    },
+    {
+      "file": "assets/pokemon-280.png",
+      "bytes": 100723,
+      "sha256": "1e0887c0375c0085a56ae14bfaddf17e15b1f999f3af34ed894ed66788329112"
+    },
+    {
+      "file": "assets/pokemon-281.png",
+      "bytes": 102442,
+      "sha256": "bb7f41bef577c3f4bc37fadc490a79cc3423b2415db98be2407523909f63e205"
+    },
+    {
+      "file": "assets/pokemon-282.png",
+      "bytes": 112206,
+      "sha256": "ac40b3e87de95706cae9631802b975882f9830c1528253d367cfa7fd3f2957bd"
     },
     {
       "file": "assets/pokemon-470.png",
@@ -2544,12 +2689,12 @@
     {
       "file": "index.html",
       "bytes": 1353,
-      "sha256": "aa8e933b8806a32d9764141f9048432638c5b8cd748db037774b5a72db1240e3"
+      "sha256": "480023201c6824e72241bf16f69a2a8fd156331fc2728e6a73914d7cbf996446"
     },
     {
       "file": "progress-file.mjs",
-      "bytes": 2142,
-      "sha256": "dcae17018fe06c04f9843cda8a9a2a0815d997bdeca232e1e4e60dee6280ea9f"
+      "bytes": 2159,
+      "sha256": "f2af7bc8aedf4c54e37f689cebc2fe7f1a9ac78e89912eb2fe70069e9efa0e9f"
     },
     {
       "file": "sound.mjs",
@@ -2558,18 +2703,18 @@
     },
     {
       "file": "trainer-engine.mjs",
-      "bytes": 10825,
-      "sha256": "4078b748b8726d1be0fa56e92a61db7d49f5219d530fbf946da4472a4577dc2a"
+      "bytes": 17360,
+      "sha256": "4983058872d3390f3741ad4f9ee7e0a5a383b22f9e29108e8ca7726498601d12"
     },
     {
       "file": "trainer.css",
-      "bytes": 48201,
-      "sha256": "4744036898fe6cd036f1f14c3cba72071010754d9e36731c06a6b8becff1ea5b"
+      "bytes": 51151,
+      "sha256": "c2677ce9de38e70a6a2bf15e75db77ac373dfd736a319288594ef8fe3fd2e928"
     },
     {
       "file": "trainer.mjs",
-      "bytes": 32588,
-      "sha256": "a450d028b734b10544e17761a793a318cdbb195946b1bb970db0845d14bb6086"
+      "bytes": 35473,
+      "sha256": "4b1041c79da1c694687368d230fe0919df0c6efae6652ea035133a99b1d9453b"
     },
     {
       "file": "voice.mjs",
